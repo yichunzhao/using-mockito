@@ -11,7 +11,7 @@ The annotation @ExtendWith(MockitoExtension.class) is applied on the Test class 
   </dependency>
  ````
 
-After bridging Junit 5 and Mockitor, it allows to use the annotation @Mock to inject the mocked instances, instead of manually creation. 
+After bridging Junit 5 and Mockito, it allows to use the annotation @Mock to inject an mocked instance, instead of manual creation. 
 
 ````
 @ExtendWith(MockitoExtension.class)
@@ -26,7 +26,7 @@ Difference between Mock and Spy
 When Mockito creates a mock, it does so from the Class of a Type, not from an actual instance. From the Class, Mockito creates a bar-boned instance.  
 On the other hand, the spy will wrap an existing instance. 
 It will still behave in the same way as the normal instance, the only difference is that it will also be instrumented to track all the interactions with it.
-In addtion, it may mock behaviours of a spied instance. 
+In addition, it may mock behaviours of a spied instance. 
 
 Mockito NotAMockException
 
