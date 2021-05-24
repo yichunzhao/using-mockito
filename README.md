@@ -8,7 +8,7 @@ The annotation @ExtendWith(MockitoExtension.class) is applied on the Test class 
             <artifactId>mockito-junit-jupiter</artifactId>
             <version>3.10.0</version>
             <scope>test</scope>
-   </dependency>
+  </dependency>
  ````
 
 
