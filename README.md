@@ -11,4 +11,12 @@ The annotation @ExtendWith(MockitoExtension.class) is applied on the Test class 
   </dependency>
  ````
 
+After bridging Junit 5 and Mockitor, it allows to use the annotation @Mock to inject the mocked instances, instead of manually creation. 
 
+````
+@ExtendWith(MockitoExtension.class)
+class DemoMockitoBasicsTest {
+
+    @Mock
+    private List<String> mockedList;
+````
