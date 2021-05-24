@@ -29,3 +29,8 @@ It will still behave in the same way as the normal instance, the only difference
 Mockito NotAMockException
 This exception is one of the common exceptions we will likely encounter when misusing mocks or spies.
 The Mockito when() method expects a mock or spy object as the argument.
+
+ArgumentCaptor Instance
+Using @Captor to inject a ArgumentCaptor Instance, with the same generic type as the target argument type. 
+ArgumentCaptor instance is used together with verify mechanism, in order to capture the input method argument while 
+verifying a mocked instance's behaviour.  
