@@ -9,6 +9,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
@@ -34,10 +35,12 @@ class DemoMockitoBasicsTest {
 
         mockedList.add("one");
         verify(mockedList).add("one");
+        verify(mockedList, times(1));
 
         assertEquals(0, mockedList.size());
 
         when(mockedList.size()).thenReturn(100);
         assertEquals(100, mockedList.size());
     }
+
 }
