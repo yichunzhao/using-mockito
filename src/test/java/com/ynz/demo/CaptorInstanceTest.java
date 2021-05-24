@@ -40,8 +40,7 @@ public class CaptorInstanceTest {
     private Meeting mockedMeeting;
 
     @Captor
-    private ArgumentCaptor<Person> varArgumentCaptor;
-
+    private ArgumentCaptor<Person[]> varArgumentCaptor;
 
     @Test
     void whenInjectArgumentCaptor_ThenShouldHaveIt() {
