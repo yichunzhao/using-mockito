@@ -33,6 +33,11 @@ Mockito NotAMockException
 This exception is one of the common exceptions we will likely encounter when misusing mocks or spies.
 The Mockito when() method expects a mock or spy object as the argument.
 
+
+When we should use thenReturn and when thenAnswer?
+
+The simplest answer is – if you need fixed return value on method call then we should use thenReturn(…)
+If you need to perform some operation or the value need to be computed at run time then we should use thenAnswer(…)
 When we should use thenReturn and when thenAnswer?
 
 The simplest answer is – if you need fixed return value on method call then we should use thenReturn(…)
