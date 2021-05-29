@@ -33,15 +33,27 @@ Mockito NotAMockException
 This exception is one of the common exceptions we will likely encounter when misusing mocks or spies.
 The Mockito when() method expects a mock or spy object as the argument.
 
-
 When we should use thenReturn and when thenAnswer?
 
 The simplest answer is – if you need fixed return value on method call then we should use thenReturn(…)
 If you need to perform some operation or the value need to be computed at run time then we should use thenAnswer(…)
 When we should use thenReturn and when thenAnswer?
 
-The simplest answer is – if you need fixed return value on method call then we should use thenReturn(…)
-If you need to perform some operation or the value need to be computed at run time then we should use thenAnswer(…)
+Method thenReturn() needs a fixed object which will be returned when we call the method.
+We can pass any type of object or value, the same value will be returned on method call.
+
+````
+Syntax: OngoingStubbing<T> thenReturn(T value);
+````
+
+Method thenAnswer needs the object of class implementing interface org.mockito.stubbing.Answer.
+Answer is the functional interface having method answer(..)
+The method answer() will be invoked when we call mocked method from mocked object.
+We can use java 8 lambda feature for implementation of answer method.
+
+````
+Syntax: OngoingStubbing<T> thenAnswer(Answer<?> answer);
+````
 
 ArgumentCaptor Instance
 
