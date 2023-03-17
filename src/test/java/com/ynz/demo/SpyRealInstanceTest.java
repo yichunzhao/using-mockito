@@ -10,9 +10,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.ArgumentMatchers.anyString;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 /**
  * Spy on a real instance
@@ -51,5 +49,4 @@ public class SpyRealInstanceTest {
         when(spyList.size()).thenReturn(250);
         assertEquals(250, spyList.size());
     }
-
 }

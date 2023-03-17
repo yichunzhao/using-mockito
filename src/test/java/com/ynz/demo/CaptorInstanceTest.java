@@ -67,5 +67,4 @@ public class CaptorInstanceTest {
         verify(mockedMeeting).addPersons(varArgumentCaptor.capture());
         assertEquals(expected, varArgumentCaptor.getAllValues());
     }
-
 }

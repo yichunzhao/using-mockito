@@ -11,11 +11,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.inOrder;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 /**
  * using @Mock annotation to inject a mocked instance without calling Mockito.mock
@@ -68,5 +64,4 @@ class DemoMockitoBasicsTest {
 
         verify(mockedList,never()).contains(anyString());
     }
-
 }

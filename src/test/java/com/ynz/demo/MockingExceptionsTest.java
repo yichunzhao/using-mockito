@@ -41,5 +41,4 @@ public class MockingExceptionsTest {
         doThrow(new RuntimeException()).when(mockedList).clear();
         assertThrows(RuntimeException.class, () -> mockedList.clear());
     }
-
 }

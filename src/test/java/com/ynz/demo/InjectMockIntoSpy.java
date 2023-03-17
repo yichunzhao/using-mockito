@@ -41,10 +41,8 @@ public class InjectMockIntoSpy {
 
     class MyDictionary {
         private Map<String, String> wordMMeaningMap;
-
         public Map<String, String> getWordMMeaningMap() {
             return wordMMeaningMap;
         }
     }
-
 }

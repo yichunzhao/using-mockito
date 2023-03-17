@@ -57,5 +57,4 @@ public class UseMockAnswerTest {
         String currentDate = list.get(0);
         assertEquals(LocalDate.now().toString(), currentDate);
     }
-
 }

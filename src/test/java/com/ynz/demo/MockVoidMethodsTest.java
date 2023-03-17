@@ -14,10 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.isA;
 import static org.mockito.ArgumentMatchers.isNull;
-import static org.mockito.Mockito.doAnswer;
-import static org.mockito.Mockito.doNothing;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Void methods can be used with Mockito’s doNothing(), doThrow(), and doAnswer() methods,
@@ -52,7 +49,6 @@ public class MockVoidMethodsTest {
     @Test
     void whenAddElementToIndexPosition_MethodInvokedOnce() {
         doNothing().when(stringList).add(isA(Integer.class), isA(String.class));
-
         stringList.add(10, "my list");
         verify(stringList, times(1)).add(10, "my list");
     }
@@ -60,7 +56,6 @@ public class MockVoidMethodsTest {
     @Test
     void invokingVoidMethod_MockitoDefaultBehaviorIsDoNothing() {
         stringList.add(0, "");
-
         verify(stringList, times(1)).add(0, "");
     }
 

@@ -61,5 +61,4 @@ public class UsingInjectMocksTest {
             this.address = address;
         }
     }
-
 }
