@@ -66,7 +66,7 @@ ArgumentCaptor instance is used together with verify, to capture the input metho
 
 Here's an example of how you can use ArgumentCaptor in a unit test:
 
-'''
+```
 // Create a mock object of a class that has a method that we want to test
 SomeClass someObject = Mockito.mock(SomeClass.class);
 
@@ -82,5 +82,5 @@ Mockito.verify(someObject).someMethod(argumentCaptor.capture());
 // Assert that the captured argument is equal to the expected value
 assertEquals("test", argumentCaptor.getValue());
 
-'''
+```
 @Captor is usde to inject a ArgumentCaptor Instance. 
